@@ -1,0 +1,186 @@
+/* Reset e base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+}
+
+/* Logo e titolo */
+
+.hero-header{
+  background-color: #FFD120;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+.logo-circle {
+  width: 25vw;                 /* 20% della viewport width */
+  max-width: 180px;            
+  aspect-ratio: 1 / 1;         /* mantiene sempre proporzioni 1:1 */
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo-circle img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+.bottoni{
+  text-align: center;
+  margin: 2rem 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.language-list {
+  list-style: none;
+  display: flex;               /* trasforma in flex container */
+  flex-direction: column;      /* colonna verticale */
+  align-items: center;         /* centra i figli orizzontalmente */
+  gap: 10px;                   /* spazio uniforme tra i bottoni */
+  margin-bottom: 40px;         /* spazio sotto la lista */
+  padding: 0;                  /* reset padding */
+}
+
+.language-list li {
+  width: 100%;                 /* per riempire l’inline axis del flex container */
+  max-width: 150px;            /* non vorremo bottoni troppo larghi */
+}
+
+.language-list button {
+  width: 100%;                /* il bottone occupa tutta la larghezza del li (quindi max 150px) */
+  font-size: 1.25rem;
+  padding: 10px 0;            /* padding verticale; padding orizzontale già gestito via width */
+  color: #333;
+  border: 2px solid #333;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.language-list button:hover {
+  background: #f0f0f0;
+}
+
+/* Sezioni del menù */
+.menu-section {
+  display: none;
+  text-align: center;
+  width: 100%;              /* sempre larga quanto il viewport/container */
+  max-width: 600px;         /* mai più larga di 600px */
+  margin: 0 auto;
+  box-sizing: border-box;   /* padding incluso nella larghezza */
+  padding: 0 1rem;          /* 1rem di “cuscinetto” interno ai lati */
+}
+
+.menu-section.active {
+    display: block;
+}
+
+/* Pulsante indietro */
+.back-btn {
+    margin: 20px 0;
+    display: inline-block;
+    color: #0066cc;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* 1) Reset del main-list: tolgo tutti i bullet */
+.menu-section .main-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* 2) Alla voce “Tartine…” tolgo di nuovo il bullet (già non c’è) */
+/*    e aggiungo un po’ di spazio sotto il blocco */
+.menu-section .main-list > li {
+  margin-bottom: 0.5em;
+}
+
+/* 3) Indento e rimetto i bullet (cerchietto) SOLO sulla tartine-list */
+.menu-section .tartine-list {
+  color:#333;
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 0.5em 0 ; /* top, dx, bottom, sx */
+  padding: 0 0 0 1.5em;                   /* zero padding, così non aumenta la larghezza */
+}
+
+/* 4) Spazio tra le singole tartine */
+.menu-section .tartine-list > li {
+  margin: 0.05em 0;
+}
+
+/* e per sicurezza, spezza parole troppo lunghe se mai succedesse */
+.menu-section li {
+  word-wrap: break-word;
+}
+
+/* 5) Gli altri <ul> senza classe restano col bullet di default e padding browser */
+/*    Se vuoi uniformare padding/margin generali: */
+.menu-section ul {
+  margin: 0.5em 0;       /* spazio sopra e sotto ogni elenco */
+  padding-left: 1em;     /* indentazione base per tutti gli elenchi */
+}
+
+/* 6) Spaziatura tra titoli e paragrafi */
+.menu-section h2 {
+  margin: 1.5em 0 0.75em;
+}
+.menu-section h3 {
+  margin: 1em 0 0.5em;
+}
+.menu-section p {
+  margin: 0.5em 0;
+}
+
+/* 1) Rimuovo bullet e indentazione da tutti gli UL che NON sono tartine-list */
+.menu-section ul:not(.tartine-list) {
+  list-style: none;
+  margin: 0.5em 0;    /* spazio sopra e sotto ogni elenco */
+  padding-left: 0;
+}
+
+/* 2) Applico bullet e indentazione solo alla tartine-list */
+.menu-section .tartine-list {
+  list-style-type: none;       /* quad */
+  list-style-position: inside;   /* dentro il box */
+  margin: 0.5em 0;               /* spazio sopra e sotto */
+  padding-left: 1.5em;           /* indentazione testi + bullet */
+}
+
+/* 3) Piccola spaziatura tra le singole tartine */
+.menu-section .tartine-list > li {
+  margin: 0.05em 0;
+}
+
+footer img {
+  display: block;        /* evita piccoli spazi bianchi sotto l’immagine */
+  max-width: 100px;       /* larghezza massima 80px */
+  width: 40%;            /* oppure un 20% rispetto al contenitore footer */
+  height: auto;          /* mantiene le proporzioni */
+  margin: 0 auto;        /* centra orizzontalmente */
+}
+
+
+

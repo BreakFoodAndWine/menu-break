@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Menù Break Food & Wine</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Prima Interfaccia -->
+        <header class="hero-header">
+            <div class="logo-circle">
+                <img src="logo.jpg" alt="Logo Break Food & Wine">
+            </div>
+        </header>
+        <div class="bottoni">
+            <h1>Menù</h1>
+            <ul class="language-list">
+                <li><button data-lang="it">Italiano</button></li>
+                <li><button data-lang="en">English</button></li>
+                <li><button data-lang="de">Deutsch</button></li>
+            </ul>
+        </div>
+        <footer>
+            <img src="giorgio.jpg" alt="Foto del cane del proprietario">
+        </footer>
+
+        <!-- Sezioni Menù Lingua -->
+
+        <!-- menù in ITALIANO -->
+        <div id="menu-it" class="menu-section">
+            <h1>Il nostro menù</h1> 
+            
+            <!-- ANTIPASTI -->
+            <h3>Qualcosa da stuzzicare</h3>
+            <ul>
+                <li>Tartine con pane fatto in casa:
+                    <ul class="tartine-list">
+                        <li>Mortadella Bolognese, burrata e pistacchio 5</li>
+                        <li>Salame friulano e asiago 4,50</li>
+                        <li>Soppressa e cipolla caramellata 4</li>
+                        <li>Prosciutto crudo di Sauris e bufala 5</li>
+                        <li>Burrata, alici e pomodorini 5</li>
+                        <li>Baccalà mantecato 5</li>
+                    </ul>
+                </li>
+                <li>Sarde* impanate con salsa tartara 10</li>
+                <li>Calamari fritti* 13,50</li>
+                <li>Patate fritte con buccia 5</li>
+            </ul>
+
+            <!-- PRIMI -->
+            <h3>I primi piatti</h3>
+            <ul>
+                <li>Spaghetti alla carbonara 10</li>
+                <li>Gnocchi al pomodoro, burrata e basilico 11,50</li>
+                <li>Spaghetti alle vongole veraci 15</li>
+                <li>Risotto ai frutti di mare* 14</li>
+            </ul>
+
+            <!--PROPOSTE DEL GIORNO -->
+            <h3>Proposte del giorno</h3> 
+            <ul>
+                <li>Spaghetti con le cozze 11,50</li>
+                <li>Galletto con patate al forno 12,50</li>
+                <li>Costine di maiale con patate al forno 12,50</li>
+            </ul>
+
+            <!-- PIATTI FREDDI -->
+            <h3>Piatti freddi</h3>
+            <ul>
+                <li>Insalata mista 5</li>
+                <li>Insalatona 10<br> 
+                (pomodoro, carote, cetrioli, tonno, uovo, mozzarella, olive)
+                </li>
+                <li>Caprese di bufala 10</li>
+            </ul>
+
+            <!-- DOLCI -->
+            <h3>Dolci</h3> 
+            <ul>
+                <li>Crepes* alla marmellata o crema di nocciola 3,50</li>
+                <li>Torta* della nonna 5</li>
+            </ul>
+            <div class="back-btn" data-action="back">← Torna indietro</div>
+        </div>
+
+        <!-- menù in INGLESE -->
+        <div id="menu-en" class="menu-section">
+            <h1>Our menu</h1>
+
+            <!-- ANTIPASTI -->
+            <h3>Something to Nibble</h3>
+            <ul>
+                <li>Tartines on homemade bread:
+                    <ul class="tartine-list">
+                        <li>Mortadella from Bologna, burrata & pistachio 5</li>
+                        <li>Friulian salami & Asiago 4.50</li>
+                        <li>Soppressa & caramelized onion 4</li>
+                        <li>Sauris cured ham & buffalo mozzarella 5</li>
+                        <li>Burrata, anchovies & cherry tomatoes 5</li>
+                        <li>Creamed cod 5</li>
+                    </ul>
+                </li>
+                <li>Breaded sardines* with tartar sauce 10</li>
+                <li>Fried calamari* 13.50</li>
+                <li>Skin-on fries 5</li>
+            </ul>
+
+            <!-- PRIMI -->
+            <h3>First Courses</h3>
+            <ul>
+                <li>Spaghetti alla carbonara 10</li>
+                <li>Gnocchi with tomato, burrata & basil 11.50</li>
+                <li>Spaghetti with clams (vongole veraci) 15</li>
+                <li>Seafood* risotto 14</li>
+            </ul>
+
+            <!--PROPOSTE DEL GIORNO -->
+            <h3>Daily Specials</h3> 
+            <ul>
+                <li>Spaghetti with mussels 11.50</li>
+                <li>Roasted spring chicken with potatoes 12.50</li>
+                <li>Pork ribs with roast potatoes 12.50</li>
+            </ul>
+
+            <!-- PIATTI FREDDI -->
+            <h3>Cold Dishes</h3>
+            <ul>
+                <li>Mixed salad 5</li>
+                <li>Large salad 10<br> 
+                (tomato, carrot, cucumber, tuna, egg, mozzarella, olives)
+                </li>
+                <li>Buffalo mozzarella Caprese 10</li>
+            </ul>
+
+            <!-- DOLCI -->
+            <h3>Desserts</h3> 
+            <ul>
+                <li>Crêpes* with jam or hazelnut cream 3.50</li>
+                <li>&ldquo;Grandma&rsquo;s&rdquo; cake* 5</li>
+            </ul>
+
+            <div class="back-btn" data-action="back">← Go back</div>
+        </div>
+
+        <!-- menù in TEDESCO -->
+        <div id="menu-de" class="menu-section">
+            <h1>Unser Menü</h1>
+
+            <!-- ANTIPASTI -->
+            <h3>Etwas zum Knabbern</h3>
+            <ul>
+                <li>Tartines auf hausgemachtem Brot:
+                    <ul class="tartine-list">
+                        <li>Mortadella aus Bologna, Burrata & Pistazie 5</li>
+                        <li>Friaulische Salami & Asiago 4,50</li>
+                        <li>Soppressa & karamellisierte Zwiebel 4</li>
+                        <li>Sauriser Rohschinken & Büffelmozzarella 5</li>
+                        <li>Burrata, Sardellen & Cherrytomaten 5</li>
+                        <li>Cremiger Stockfisch 5</li>
+                    </ul>
+                </li>
+                <li>Paniert Sardinen* mit Tartarsauce 10</li>
+                <li>Frittierte Calamari 13,50</li>
+                <li>Kartoffeln* mit Schale (Pommes) 5</li>
+            </ul>
+
+            <!-- PRIMI -->
+            <h3>Erste Gänge</h3>
+            <ul>
+                <li>Spaghetti alla Carbonara 10</li>
+                <li>Gnocchi mit Tomate, Burrata & Basilikum 11,50</li>
+                <li>Spaghetti mit Venusmuscheln 15</li>
+                <li>Meeresfrüchte*-Risotto 14</li>
+            </ul>
+
+            <!--PROPOSTE DEL GIORNO -->
+            <h3>Tagesangebote</h3> 
+            <ul>
+                <li>Spaghetti mit Miesmuscheln 11,50</li>
+                <li>Brathähnchen mit Ofenkartoffeln 12,50</li>
+                <li>Schweinerippchen mit Ofenkartoffeln 12,50</li>
+            </ul>
+
+            <!-- PIATTI FREDDI -->
+            <h3>Kalte Gerichte</h3>
+            <ul>
+                <li>Gemischter Salat 5</li>
+                <li>Großer Salat 10<br> 
+                (Tomate, Karotte, Gurke, Thunfisch, Ei, Mozzarella, Oliven)
+                </li>
+                <li>Caprese mit Büffelmozzarella 10</li>
+            </ul>
+
+            <!-- DOLCI -->
+            <h3>Desserts</h3> 
+            <ul>
+                <li>Crêpes* mit Marmelade oder Haselnusscreme 3,50</li>
+                <li>Oma&rsquo;s Kuchen* 5</li>
+            </ul>
+            
+            <div class="back-btn" data-action="back">← Zurück</div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
