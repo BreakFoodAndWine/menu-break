@@ -21,6 +21,7 @@
                 <li><button data-lang="de">Deutsch</button></li>
             </ul>
         </div>
+
         <footer>
             <img src="giorgio.jpg" alt="Foto del cane del proprietario">
         </footer>
@@ -30,60 +31,184 @@
         <!-- menù in ITALIANO -->
         <div id="menu-it" class="menu-section">
             <h1>Il nostro menù</h1> 
-            
-            <!-- ANTIPASTI -->
-            <h3>Qualcosa da stuzzicare</h3>
-            <ul>
-                <li>Tartine con pane fatto in casa:
-                    <ul class="tartine-list">
-                        <li>Mortadella Bolognese, burrata e pistacchio - 5€</li>
-                        <li>Salame friulano e asiago - 4,50€</li>
-                        <li>Soppressa e cipolla caramellata - 4€</li>
-                        <li>Prosciutto crudo di Sauris e bufala - 5€</li>
-                        <li>Burrata, alici e pomodorini - 5€</li>
-                        <li>Baccalà mantecato -5€</li>
-                    </ul>
-                </li>
-                <li>Sarde* impanate con salsa tartara - 10€</li>
-                <li>Calamari fritti* - 13,50€</li>
-                <li>Patate fritte con buccia - 5€</li>
-            </ul>
 
-            <!-- PRIMI -->
-            <h3>I primi piatti</h3>
-            <ul>
-                <li>Spaghetti alla carbonara - 10€</li>
-                <li>Gnocchi al pomodoro, burrata e basilico - 11,50€</li>
-                <li>Spaghetti alle vongole veraci - 15€</li>
-                <li>Risotto ai frutti di mare* - 14€</li>
-            </ul>
+            <!-- Nuovo menù a tendina -->
+            <div class="menu-dropdown">
+                <button class="btn-cucina">Dalla cucina ▾</button>
+                    <div class="menu-category category-cucina">
+                        <!-- ANTIPASTI -->
+                        <h3>Qualcosa da stuzzicare</h3>
+                        <ul>
+                            <li>Tartine con pane fatto in casa:
+                                <ul class="tartine-list">
+                                    <li>Mortadella Bolognese, burrata e pistacchio - 5€</li>
+                                    <li>Salame friulano e asiago - 4,50€</li>
+                                    <li>Soppressa e cipolla caramellata - 4€</li>
+                                    <li>Prosciutto crudo di Sauris e bufala - 5€</li>
+                                    <li>Burrata, alici e pomodorini - 5€</li>
+                                    <li>Baccalà mantecato -5€</li>
+                                </ul>
+                            </li>
+                            <li>Sarde* impanate con salsa tartara - 10€</li>
+                            <li>Calamari fritti* - 13,50€</li>
+                            <li>Patate fritte con buccia - 5€</li>
+                        </ul>
 
-            <!--PROPOSTE DEL GIORNO -->
-            <h3>Proposte del giorno</h3> 
-            <ul>
-                <li>Spaghetti con le cozze - 11,50€</li>
-                <li>Gnocchi con ragù di asino - 12,50€</li>
-                <li>Galletto con patate al forno - 12,50€</li>
-                <li>Costine di maiale con patate al forno - 12,50€</li>
-                <li>Linguine con sugo di polipetto - 13€</li>
-            </ul>
+                        <!-- PRIMI -->
+                        <h3>I primi piatti</h3>
+                        <ul>
+                            <li>Spaghetti alla carbonara - 10€</li>
+                            <li>Gnocchi al pomodoro, burrata e basilico - 11,50€</li>
+                            <li>Spaghetti alle vongole veraci - 15€</li>
+                            <li>Risotto ai frutti di mare* - 14€</li>
+                        </ul>
 
-            <!-- PIATTI FREDDI -->
-            <h3>Piatti freddi</h3>
-            <ul>
-                <li>Insalata mista - 5€</li>
-                <li>Insalatona - 10€<br> 
-                (pomodoro, carote, cetrioli, tonno, uovo, mozzarella, olive)
-                </li>
-                <li>Caprese di bufala - 10€</li>
-            </ul>
+                        <!--PROPOSTE DEL GIORNO -->
+                        <h3>Proposte del giorno</h3> 
+                        <ul>
+                            <li>Spaghetti con le cozze - 11,50€</li>
+                            <li>Gnocchi con ragù di asino - 12,50€</li>
+                            <li>Galletto con patate al forno - 12,50€</li>
+                            <li>Costine di maiale con patate al forno - 12,50€</li>
+                            <li>Linguine con sugo di polipetto - 13€</li>
+                        </ul>
 
-            <!-- DOLCI -->
-            <h3>Dolci</h3> 
-            <ul>
-                <li>Crepes* alla marmellata o crema di nocciola - 3,50€</li>
-                <li>Torta* della nonna - 5€</li>
-            </ul>
+                        <!-- PIATTI FREDDI -->
+                        <h3>Piatti freddi</h3>
+                        <ul>
+                            <li>Insalata mista - 5€</li>
+                            <li>Insalatona - 10€<br> 
+                            (pomodoro, carote, cetrioli, tonno, uovo, mozzarella, olive)
+                            </li>
+                            <li>Caprese di bufala - 10€</li>
+                        </ul>
+
+                        <!-- DOLCI -->
+                        <h3>Dolci</h3> 
+                        <ul>
+                            <li>Crepes* alla marmellata o crema di nocciola - 3,50€</li>
+                            <li>Torta* della nonna - 5€</li>
+                        </ul>
+
+                        <p>
+                            <b>Informazioni su allergeni e ingredienti</b> <br>
+                            Non essendo noi un ristorante Gluten-free, non possiamo garantire che la contaminazione incrociata 
+                            non si verificherà mai, per maggiori informazioni rivolgersi al personale di sala. Per qualsiasi 
+                            informazione riguardo alla presenza di sostanze che possono provocare allergie ed intolleranze è
+                            possibile consultare l&rsquo;apposita documentazione esposta o chiedere al personale di servizio. *Alcune 
+                            materie prime possono essere surgelate in origine o congelate in loco mediante abbattitore rapido 
+                            di temperatura. <br> Coperto €2.00
+                        </p>
+                    </div>
+                <button class="btn-bevande">Bevande ▾</button>
+                    <div class="menu-category category-bevande" >
+                        <h3>Bevande analcoliche</h3>
+                            <ul>
+                                <li>Acqua naturale/frizzante 0,5l - 1,50€</li>
+                                <li>Acqua naturale/frizzante 1l - 2,50€</li>
+                                <li>Succo di frutta - 3,50€ <br>
+                                (ACE, pesca, arancia, mela)
+                                </li>
+                                <li>Coca cola/zero - 3,50€</li>
+                                <li>Fanta - 3,50€</li>
+                                <li>The pesca/limone - 3,50€</li>
+                                <li>Lemon Soda - 3,50€</li>
+                                <li>Acqua tonica - 3,50€</li>
+                                <li>Red Bull - 3,50€</li>
+                                <li>Gingerino - 3€</li>
+                            </ul>
+                    </div>
+
+                <button class="btn-vini">Vini ▾</button>
+                    <div class="menu-category category-vini" >
+                        <h3>Vini della casa</h3>
+                            <ul>
+                                <li>Calice di rosso/bianco - 1,50€</li>
+                                <li>1/4 di rosso/bianco - 3€</li>
+                                <li>1/2 di rosso/bianco - 6€</li>
+                                <li>1l di rosso/bianco - 11€</li>
+                                <li>Calice di prosecco - 2,80€</li>
+                                <li>Bottiglia di prosecco - 18€</li>
+                            </ul>
+                        <h3>Vini bianchi</h3>
+                            <ul>
+                                <li>Ribolla Gialla, Blason - 22€</li>
+                                <li>Ribolla Gialla spumantizzata <br>Terre di Palazzatto - 18€<br>Castello di Spessa - 24€</li>
+                                <li>Sauvignon <br>Vigna Angeli - 20€<br>Davide Feresin - 22€<br>
+                                    Coldigrotta - 30€<br>Stanig - 28€
+                                </li>
+                                <li>Pinot Grigio <br>Castello di Spessa - 28€<br>Amandum (Grey) - 34€
+                                    <br>Vigna Angeli - 20€<br>Davide Feresin - 22€
+                                </li>
+                                <li>Traminer, Brojili - 17€</li>
+                                <li>Franciacorta Brut, Castelveder - 42€</li>
+                                <li>Metodo classico Brut, Piè di Mont - 38€</li>
+                                <li>Trento DOC Altinum Brut, Aldeno - 55€</li>
+                                <li>Vitovska ferma, Lupinc - 35€</li>
+                                <li>Vitovska metodo classico, Lupinc - 48€</li>
+                            </ul>
+                        <h3>Vini rossi</h3>
+                            <ul>
+                                <li>Pinot Nero<br>Isola Augusta - 22€ <br>Amandum - 48€ <br>Mulino delle Tolle - 34€</li>
+                                <li>Schioppettino <br>Isola Augusta - 22€ <br>Stanig - 28€</li>
+                                <li>Cabernet Sauvignon  <br>Amandum - 42€<br>Castello di Spessa - 28€ <br>Isola Augusta - 22€</li>
+                                <li>Cabernet Franc, Amandum - 42€</li>
+                                <li>Nero di Botte, Davide Feresin - 38€</li>
+                                <li>I Ferretti Collezione Rol, Luisa - 48€</li>
+                                <li>Brauros, Ronchi di Manzano - 48€</li>
+                            </ul>
+                    </div>
+                <button class="btn-birre">Birre ▾</button>
+                    <div class="menu-category category-birre" >
+                        <h3>Birre</h3>
+                        <ul>
+                            <li>Hb Traunstein, Helles <br>0,25 l - 3€ <br>0,5 l - 5€ <br>1 l - 9€</li>
+                            <li>Heart & Soul vocation, IPA <br>0,2 l - 3,50€ <br>0,4 l - 6€</li>
+                            <li>Hb Traunstein, Dunkel <br> in bottiglia da 0,5 l - 5,50€</li>
+                        </ul>
+                    </div>
+                <button class="btn-cocktail">Cocktail ▾</button>
+                    <div class="menu-category category-cocktail" >
+                        <h3>Spritz</h3>
+                        <ul>
+                            <li>Spritz bianco/rosso - 2€</li>
+                            <li>Spritz Aperol - 4,50€</li>
+                            <li>Spritz Campari - 4,50€</li>
+                            <li>Spritz Hugo - 4,50€</li>
+                            <li>1&times;2 - 5,60€</li>
+                            <li>Campari Soda + prosecco - 3,50€</li>
+                        </ul>
+                        <h3>Cocktail</h3>
+                        <ul>
+                            <li>Negroni - 6€</li>
+                            <li>Americano - 5€</li>
+                            <li>Mojito - 7€</li>
+                            <li>Vodka Tonic/Lemon base - 6€</li>
+                            <li>Gin Tonic/Lemon base - 6€</li>
+                            <li>Long Island - 7€</li>
+                            <li>Moskow Mule - 6€</li>
+                            <li>Cuba Libre - 7€</li>
+                        </ul>  
+                        <h3>I nostri gin</h3>
+                        <ul>
+                            <li>Mare Capri - 12€</li>
+                            <li>Hendrick's Sunspell - 10€</li>
+                            <li>Santa ana - 10€</li>
+                            <li>Nordes - 8€</li>
+                            <li>Marcati - 7€</li>
+                            <li>Malfy - 8€</li>
+                            <li>Antidote - 8€</li>
+                            <li>Porter&rsquo;s - 10€</li>
+                            <li>Citadelle - 8€</li>
+                            <li>Jinzu - 8€</li>
+                            <li>Gold - 10€</li>
+                            <li>Puerto de Indias - 8€</li>
+                            <li>Whitley neill - 8€</li>
+                            <li>Tanqueray Ten- 8€</li>
+                            <li>Tanqueray analcolico - 6€</li>
+                        </ul>
+                    </div>
+            </div>              
             <div class="back-btn" data-action="back">← Torna indietro</div>
         </div>
 
@@ -91,60 +216,194 @@
         <div id="menu-en" class="menu-section">
             <h1>Our menu</h1>
 
-            <!-- ANTIPASTI -->
-            <h3>Something to Nibble</h3>
-            <ul>
-                <li>Toasts with homemade bread:
-                    <ul class="tartine-list">
-                        <li>Mortadella, burrata & pistachio - €5</li>
-                        <li>Friulian salami & Asiago - €4.50</li>
-                        <li>Soppressa & caramelized onion - €4</li>
-                        <li>Sauris cured ham & buffalo mozzarella - €5</li>
-                        <li>Burrata, anchovies & cherry tomatoes - €5</li>
-                        <li>Creamed cod - €5</li>
+            <div class="menu-dropdown">
+                <button class="btn-cucina">From the Kitchen ▾</button>
+                <div class="menu-category category-cucina">
+                    <!-- ANTIPASTI -->
+                    <h3>Something to nibble</h3>
+                    <ul>
+                        <li>Homemade bread tartines:
+                            <ul class="tartine-list">
+                                <li>Bolognese mortadella, burrata and pistachio - €5</li>
+                                <li>Friulian salami and asiago - €4.50</li>
+                                <li>Soppressa and caramelized onion - €4</li>
+                                <li>Sauris raw ham and buffalo mozzarella - €5</li>
+                                <li>Burrata, anchovies and cherry tomatoes - €5</li>
+                                <li>Whipped cod - €5</li>
+                            </ul>
+                        </li>
+                        <li>Breaded sardines* with tartar sauce - €10</li>
+                        <li>Fried calamari* - €13.50</li>
+                        <li>Skin-on French fries - €5</li>
                     </ul>
-                </li>
-                <li>Breaded sardines* with tartar sauce - €10</li>
-                <li>Fried calamari* - €13.50</li>
-                <li>Skin-on fries - €5</li>
-            </ul>
 
-            <!-- PRIMI -->
-            <h3>First Courses</h3>
-            <ul>
-                <li>Spaghetti carbonara - €10</li>
-                <li>Gnocchi with tomato, burrata & basil - €11.50</li>
-                <li>Spaghetti with clams (vongole veraci) - €15</li>
-                <li>Seafood* risotto - €14</li>
-            </ul>
+                    <!-- PRIMI -->
+                    <h3>Main courses</h3>
+                    <ul>
+                        <li>Spaghetti carbonara - €10</li>
+                        <li>Gnocchi with tomato sauce, burrata and basil - €11.50</li>
+                        <li>Spaghetti with veracious clams - €15</li>
+                        <li>Seafood risotto* - €14</li>
+                    </ul>
 
-            <!--PROPOSTE DEL GIORNO -->
-            <h3>Daily Specials</h3> 
-            <ul>
-                <li>Spaghetti with mussels - €11.50</li>
-                <li>Gnocchi with donkey ragù - €12.50</li>
-                <li>Roasted spring chicken with potatoes - €12.50</li>
-                <li>Pork ribs with roast potatoes - €12.50</li>
-                <li>Linguine with octopus sauce - €13</li>
-            </ul>
+                    <!-- PROPOSTE DEL GIORNO -->
+                    <h3>Daily specials</h3> 
+                    <ul>
+                        <li>Spaghetti with mussels - €11.50</li>
+                        <li>Gnocchi with donkey meat ragù - €12.50</li>
+                        <li>Roasted cockerel with potatoes - €12.50</li>
+                        <li>Pork ribs with roasted potatoes - €12.50</li>
+                        <li>Linguine with octopus sauce - €13</li>
+                    </ul>
 
-            <!-- PIATTI FREDDI -->
-            <h3>Cold Dishes</h3>
-            <ul>
-                <li>Mixed salad - €5</li>
-                <li>Large salad - €10<br> 
-                (tomato, carrot, cucumber, tuna, egg, mozzarella, olives)
-                </li>
-                <li>Buffalo mozzarella Caprese - €10</li>
-            </ul>
+                    <!-- PIATTI FREDDI -->
+                    <h3>Cold dishes</h3>
+                    <ul>
+                        <li>Mixed salad - €5</li>
+                        <li>Big salad - €10<br>
+                            (tomato, carrots, cucumbers, tuna, egg, mozzarella, olives)
+                        </li>
+                        <li>Caprese with buffalo mozzarella - €10</li>
+                    </ul>
 
-            <!-- DOLCI -->
-            <h3>Desserts</h3> 
-            <ul>
-                <li>Crêpes* with jam or hazelnut cream - €3.50</li>
-                <li>&ldquo;Grandma&rsquo;s&rdquo; cake* - €5</li>
-            </ul>
+                    <!-- DOLCI -->
+                    <h3>Desserts</h3> 
+                    <ul>
+                        <li>Crepes* with jam or hazelnut cream - €3.50</li>
+                        <li>Grandma&rsquo;s cake* - €5</li>
+                    </ul>
 
+                    <p>
+                        <b>Information on allergens and ingredients</b> <br>
+                        As we are not a gluten-free restaurant, we cannot guarantee that cross-contamination will never occur. 
+                        For more information, please ask the waiting staff. For any information regarding the presence of substances 
+                        that can cause allergies and intolerances, you can consult the appropriate documentation displayed or ask the 
+                        service staff. *Some raw materials may be frozen originally or frozen on-site using a rapid temperature 
+                        reduction method. <br> Cover charge €2.00
+                </div>
+
+                <button class="btn-bevande">Drinks ▾</button>
+                <div class="menu-category category-bevande">
+                    <h3>Non-alcoholic drinks</h3>
+                    <ul>
+                        <li>Still/sparkling water 0.5l - €1.50</li>
+                        <li>Still/sparkling water 1l - €2.50</li>
+                        <li>Fruit juice - €3.50<br>
+                            (ACE, peach, orange, apple)
+                        </li>
+                        <li>Coca Cola/Zero - €3.50</li>
+                        <li>Fanta - €3.50</li>
+                        <li>Peach/lemon iced tea - €3.50</li>
+                        <li>Lemon Soda - €3.50</li>
+                        <li>Tonic water - €3.50</li>
+                        <li>Red Bull - €3.50</li>
+                        <li>Gingerino - €3</li>
+                    </ul>
+                </div>
+
+                <button class="btn-vini">Wines ▾</button>
+                <div class="menu-category category-vini">
+                    <h3>House wines</h3>
+                    <ul>
+                        <li>Glass of red/white - €1.50</li>
+                        <li>1/4 red/white - €3</li>
+                        <li>1/2 red/white - €6</li>
+                        <li>1l red/white - €11</li>
+                        <li>Glass of prosecco - €2.80</li>
+                        <li>Bottle of prosecco - €18</li>
+                    </ul>
+                    <h3>Wines by the glass</h3>
+                    <ul>
+                        <li>Prosecco - €4.50</li>
+                        <li>Pinot Grigio - €4.50</li>
+                        <li>Chardonnay - €4.50</li>
+                        <li>Merlot - €4.50</li>
+                        <li>Cabernet Sauvignon - €4.50</li>
+                        <li>Veneto red - €4.50</li>
+                    </ul>
+                    <h3>Red wines</h3>
+                    <ul>
+                        <li>Pinot Nero<br>Isola Augusta - €22 <br>Amandum - €48 <br>Mulino delle Tolle - €34</li>
+                        <li>Schioppettino <br>Isola Augusta - €22 <br>Stanig - €28</li>
+                        <li>Cabernet Sauvignon  <br>Amandum - €42<br>Castello di Spessa - €28 <br>Isola Augusta - €22</li>
+                        <li>Cabernet Franc, Amandum - €42</li>
+                        <li>Nero di Botte, Davide Feresin - €38</li>
+                        <li>I Ferretti Collezione Rol, Luisa - €48</li>
+                        <li>Brauros, Ronchi di Manzano - €48</li>
+                    </ul>
+                    <h3>White wines</h3>
+                    <ul>
+                        <ul>
+                            <li>Ribolla Gialla, Blason - €22</li>
+                            <li>Ribolla Gialla spumantizzata <br>Terre di Palazzatto - €18<br>Castello di Spessa - €24</li>
+                            <li>Sauvignon <br>Vigna Angeli - €20<br>Davide Feresin - €22<br>
+                                Coldigrotta - €30<br>Stanig - €28
+                            </li>
+                            <li>Pinot Grigio <br>Castello di Spessa - 28€<br>Amandum (Grey) - €34
+                                <br>Vigna Angeli - €20<br>Davide Feresin - €22
+                            </li>
+                            <li>Traminer, Brojili - €17</li>
+                            <li>Franciacorta Brut, Castelveder - €42</li>
+                            <li>Metodo classico Brut, Piè di Mont - €38</li>
+                            <li>Trento DOC Altinum Brut, Aldeno - €55</li>
+                            <li>Vitovska ferma, Lupinc - €35</li>
+                            <li>Vitovska metodo classico, Lupinc - €48</li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <button class="btn-birre">Beers ▾</button>
+                <div class="menu-category category-birre">
+                    <h3>Beers</h3>
+                    <ul>
+                        <li>Hb Traunstein, Helles <br>0,25 l - €3 <br>0,5 l - €5 <br>1 l - €9</li>
+                        <li>Heart & Soul vocation, IPA <br>0,2 l - €3.50 <br>0,4 l - €6</li>
+                        <li>Hb Traunstein, Dunkel <br> in 0.5l bottle - 5,50€</li>
+                    </ul>
+                </div>
+
+                <button class="btn-cocktail">Cocktails ▾</button>
+                <div class="menu-category category-cocktail">
+                    <h3>Spritz</h3>
+                    <ul>
+                        <li>White/red Spritz - €2</li>
+                        <li>Aperol Spritz - €4.50</li>
+                        <li>Campari Spritz - €4.50</li>
+                        <li>Hugo Spritz - €4.50</li>
+                        <li>1&times;2 - €5.60</li>
+                        <li>Campari Soda + prosecco - €3.50</li>
+                    </ul>
+                    <h3>Cocktails</h3>
+                    <ul>
+                        <li>Negroni - €6</li>
+                        <li>Americano - €5</li>
+                        <li>Mojito - €7</li>
+                        <li>Vodka Tonic/Lemon base - €6</li>
+                        <li>Gin Tonic/Lemon base - €6</li>
+                        <li>Long Island - €7</li>
+                        <li>Moscow Mule - €6</li>
+                        <li>Cuba Libre - €7</li>
+                    </ul>  
+                    <h3>Our gins</h3>
+                    <ul>
+                        <li>Mare Capri - €12</li>
+                        <li>Hendrick's Sunspell - €10</li>
+                        <li>Santa ana - €10</li>
+                        <li>Nordes - €8</li>
+                        <li>Marcati - €7</li>
+                        <li>Malfy - €8</li>
+                        <li>Antidote - €8</li>
+                        <li>Porter&rsquo;s - €10</li>
+                        <li>Citadelle - €8</li>
+                        <li>Jinzu - €8</li>
+                        <li>Gold - €10</li>
+                        <li>Puerto de Indias - €8</li>
+                        <li>Whitley neill - €8</li>
+                        <li>Tanqueray Ten- €8</li>
+                        <li>Tanqueray analcolico - €6</li>
+                    </ul>
+                </div>
+            </div>
             <div class="back-btn" data-action="back">← Go back</div>
         </div>
 
@@ -152,61 +411,197 @@
         <div id="menu-de" class="menu-section">
             <h1>Unser Menü</h1>
 
-            <!-- ANTIPASTI -->
-            <h3>Etwas zum Knabbern</h3>
-            <ul>
-                <li>Tartines auf hausgemachtem Brot:
-                    <ul class="tartine-list">
-                        <li>Mortadella, Burrata & Pistazie - €5</li>
-                        <li>Friaulische Salami & Asiago - €4,50</li>
-                        <li>Soppressa & karamellisierte Zwiebel - €4</li>
-                        <li>Sauriser Rohschinken & Büffelmozzarella - €5</li>
-                        <li>Burrata, Sardellen & Cherrytomaten - €5</li>
-                        <li>Cremiger Stockfisch - €5</li>
+            <div class="menu-dropdown">
+                <button class="btn-cucina">Aus der Küche ▾</button>
+                <div class="menu-category category-cucina">
+                    <!-- ANTIPASTI -->
+                    <h3>Etwas zum Knabbern</h3>
+                    <ul>
+                        <li>Canapés mit hausgemachtem Brot:
+                            <ul class="tartine-list">
+                                <li>Bologneser Mortadella, Burrata und Pistazien - 5€</li>
+                                <li>Friauler Salami und Asiago - 4,50€</li>
+                                <li>Soppressa und karamellisierte Zwiebeln - 4€</li>
+                                <li>Rohschinken aus Sauris und Büffelmozzarella - 5€</li>
+                                <li>Burrata, Sardellen und Kirschtomaten - 5€</li>
+                                <li>Aufgeschlagener Stockfisch - 5€</li>
+                            </ul>
+                        </li>
+                        <li>Panierte Sardinen* mit Remoulade - 10€</li>
+                        <li>Frittierte Calamari* - 13,50€</li>
+                        <li>Pommes mit Schale - 5€</li>
                     </ul>
-                </li>
-                <li>Paniert Sardinen* mit Tartarsauce - €10</li>
-                <li>Frittierte Calamari - €13,50</li>
-                <li>Pommes* Frittes mit Schale - €5</li>
-            </ul>
 
-            <!-- PRIMI -->
-            <h3>Erste Gänge</h3>
-            <ul>
-                <li>Spaghetti Carbonara - €10</li>
-                <li>Gnocchi mit Tomate, Burrata & Basilikum - €11,50</li>
-                <li>Spaghetti mit Venusmuscheln - €15</li>
-                <li>Meeresfrüchte* Risotto - €14</li>
-            </ul>
+                    <!-- PRIMI -->
+                    <h3>Hauptgerichte</h3>
+                    <ul>
+                        <li>Spaghetti Carbonara - 10€</li>
+                        <li>Gnocchi mit Tomatensauce, Burrata und Basilikum - 11,50€</li>
+                        <li>Spaghetti mit Venusmuscheln - 15€</li>
+                        <li>Meeresfrüchterisotto* - 14€</li>
+                    </ul>
 
-            <!--PROPOSTE DEL GIORNO -->
-            <h3>Tagesangebote</h3> 
-            <ul>
-                <li>Spaghetti mit Miesmuscheln - €11,50</li>
-                <li>Gnocchi mit Eselsragout - €12,50</li>
-                <li>Brathähnchen mit Ofenkartoffeln - €12,50</li>
-                <li>Schweinerippchen mit Ofenkartoffeln - €12,50</li>
-                <li>Linguine mit Oktopus in Sauce - €13</li>
-            </ul>
+                    <!-- PROPOSTE DEL GIORNO -->
+                    <h3>Tagesangebote</h3> 
+                    <ul>
+                        <li>Spaghetti mit Miesmuscheln - 11,50€</li>
+                        <li>Gnocchi mit Eselsragout - 12,50€</li>
+                        <li>Hähnchenkeule mit Ofenkartoffeln - 12,50€</li>
+                        <li>Schweinerippchen mit Ofenkartoffeln - 12,50€</li>
+                        <li>Linguine mit Oktopus in Sauce - €13</li>
+                    </ul>
 
-            <!-- PIATTI FREDDI -->
-            <h3>Kalte Gerichte</h3>
-            <ul>
-                <li>Gemischter Salat - €5</li>
-                <li>Großer Salat - €10<br> 
-                (Tomate, Karotte, Gurke, Thunfisch, Ei, Mozzarella, Oliven)
-                </li>
-                <li>Caprese mit Büffelmozzarella - €10</li>
-            </ul>
+                    <!-- PIATTI FREDDI -->
+                    <h3>Kalte Gerichte</h3>
+                    <ul>
+                        <li>Gemischter Salat - 5€</li>
+                        <li>Großer Salat - 10€<br>
+                            (Tomaten, Karotten, Gurken, Thunfisch, Ei, Mozzarella, Oliven)
+                        </li>
+                        <li>Caprese mit Büffelmozzarella - 10€</li>
+                    </ul>
 
-            <!-- DOLCI -->
-            <h3>Desserts</h3> 
-            <ul>
-                <li>Crêpes* mit Marmelade oder Haselnusscreme - €3,50</li>
-                <li>Oma&rsquo;s Kuchen* - €5</li>
-            </ul>
-            
+                    <!-- DOLCI -->
+                    <h3>Nachspeisen</h3> 
+                    <ul>
+                        <li>Crepes* mit Marmelade oder Haselnusscreme - 3,50€</li>
+                        <li>Großmutters Kuchen* - 5€</li>
+                    </ul>
+                    <p>
+                        <b>Informationen zu Allergenen und Inhaltsstoffen</b> <br>
+                        Da wir kein glutenfreies Restaurant sind, können wir nicht garantieren, dass eine Kreuzkontamination 
+                        völlig ausgeschlossen ist. Für weitere Informationen wenden Sie sich bitte an das Servicepersonal. 
+                        Für Informationen über die enthaltenen Stoffe, die Allergien oder Unverträglichkeiten auslösen können, 
+                        können Sie die bereitgestellte Dokumentation einsehen oder das Personal fragen. *Einige Rohstoffe können 
+                        ursprünglich tiefgefroren sein oder vor Ort mit einem Schnellkühler eingefroren werden. <br> Tischgedeck 2,00€
+                    </p>
+
+                </div>
+
+                <button class="btn-bevande">Getränke ▾</button>
+                <div class="menu-category category-bevande">
+                    <h3>Alkoholfreie Getränke</h3>
+                    <ul>
+                        <li>Wasser still/sprudelnd 0,5l - 1,50€</li>
+                        <li>Wasser still/sprudelnd 1l - 2,50€</li>
+                        <li>Fruchtsaft - 3,50€<br>
+                            (ACE, Pfirsich, Orange, Apfel)
+                        </li>
+                        <li>Coca Cola/Zero - 3,50€</li>
+                        <li>Fanta - 3,50€</li>
+                        <li>Eistee Pfirsich/Zitrone - 3,50€</li>
+                        <li>Lemon Soda - 3,50€</li>
+                        <li>Tonic Water - 3,50€</li>
+                        <li>Red Bull - 3,50€</li>
+                        <li>Gingerino - 3€</li>
+                    </ul>
+                </div>
+
+                <button class="btn-vini">Weine ▾</button>
+                <div class="menu-category category-vini">
+                    <h3>Hausweine</h3>
+                    <ul>
+                        <li>Glas Rot-/Weißwein - 1,50€</li>
+                        <li>1/4 Liter Rot-/Weißwein - 3€</li>
+                        <li>1/2 Liter Rot-/Weißwein - 6€</li>
+                        <li>1 Liter Rot-/Weißwein - 11€</li>
+                        <li>Glas Prosecco - 2,80€</li>
+                        <li>Flasche Prosecco - 18€</li>
+                    </ul>
+                    <h3>Weine im Ausschank</h3>
+                    <ul>
+                        <li>Prosecco - 4,50€</li>
+                        <li>Pinot Grigio - 4,50€</li>
+                        <li>Chardonnay - 4,50€</li>
+                        <li>Merlot - 4,50€</li>
+                        <li>Cabernet Sauvignon - 4,50€</li>
+                        <li>Rotwein aus Venetien - 4,50€</li>
+                    </ul>
+                    <h3>Rotweine</h3>
+                    <ul>
+                        <li>Pinot Nero<br>Isola Augusta - 22€ <br>Amandum - 48€ <br>Mulino delle Tolle - 34€</li>
+                        <li>Schioppettino <br>Isola Augusta - 22€ <br>Stanig - 28€</li>
+                        <li>Cabernet Sauvignon  <br>Amandum - 42€<br>Castello di Spessa - 28€ <br>Isola Augusta - 22€</li>
+                        <li>Cabernet Franc, Amandum - 42€</li>
+                        <li>Nero di Botte, Davide Feresin - 38€</li>
+                        <li>I Ferretti Collezione Rol, Luisa - 48€</li>
+                        <li>Brauros, Ronchi di Manzano - 48€</li>
+                    </ul>
+                    <h3>Weißweine</h3>
+                    <ul>
+                        <ul>
+                            <li>Ribolla Gialla, Blason - 22€</li>
+                            <li>Ribolla Gialla spumantizzata <br>Terre di Palazzatto - 18€<br>Castello di Spessa - 24€</li>
+                            <li>Sauvignon <br>Vigna Angeli - 20€<br>Davide Feresin - 22€<br>
+                                Coldigrotta - 30€<br>Stanig - 28€
+                            </li>
+                            <li>Pinot Grigio <br>Castello di Spessa - 28€<br>Amandum (Grey) - 34€
+                                <br>Vigna Angeli - 20€<br>Davide Feresin - 22€
+                            </li>
+                            <li>Traminer, Brojili - 17€</li>
+                            <li>Franciacorta Brut, Castelveder - 42€</li>
+                            <li>Metodo classico Brut, Piè di Mont - 38€</li>
+                            <li>Trento DOC Altinum Brut, Aldeno - 55€</li>
+                            <li>Vitovska ferma, Lupinc - 35€</li>
+                            <li>Vitovska metodo classico, Lupinc - 48€</li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <button class="btn-birre">Biere ▾</button>
+                <div class="menu-category category-birre">
+                    <h3>Biere</h3>
+                    <ul>
+                        <li>Hb Traunstein, Helles <br>0,25 l - 3€ <br>0,5 l - 5€ <br>1 l - 9€</li>
+                        <li>Heart & Soul vocation, IPA <br>0,2 l - 3,50€ <br>0,4 l - 6€</li>
+                        <li>Hb Traunstein, Dunkel <br> in 0,5l Flasche - 5.50€</li>
+                    </ul>
+                </div>
+
+                <button class="btn-cocktail">Cocktails ▾</button>
+                <div class="menu-category category-cocktail">
+                    <h3>Spritz</h3>
+                    <ul>
+                        <li>Weißer/Roter Spritz - 2€</li>
+                        <li>Aperol Spritz - 4,50€</li>
+                        <li>Campari Spritz - 4,50€</li>
+                        <li>Hugo - 4,50€</li>
+                        <li>1&times;2 - 5,60€</li>
+                        <li>Campari Soda + Prosecco - 3,50€</li>
+                    </ul>
+                    <h3>Cocktails</h3>
+                    <ul>
+                        <li>Negroni - 6€</li>
+                        <li>Americano - 5€</li>
+                        <li>Mojito - 7€</li>
+                        <li>Wodka Tonic/Zitrone - 6€</li>
+                        <li>Gin Tonic/Zitrone - 6€</li>
+                        <li>Long Island - 7€</li>
+                        <li>Moscow Mule - 6€</li>
+                        <li>Cuba Libre - 7€</li>
+                    </ul>  
+                    <h3>Unsere Gins</h3>
+                    <ul>
+                        <li>Mare Capri - 12€</li>
+                        <li>Hendrick's Sunspell - 10€</li>
+                        <li>Santa ana - 10€</li>
+                        <li>Nordes - 8€</li>
+                        <li>Marcati - 7€</li>
+                        <li>Malfy - 8€</li>
+                        <li>Antidote - 8€</li>
+                        <li>Porter&rsquo;s - 10€</li>
+                        <li>Citadelle - 8€</li>
+                        <li>Jinzu - 8€</li>
+                        <li>Gold - 10€</li>
+                        <li>Puerto de Indias - 8€</li>
+                        <li>Whitley neill - 8€</li>
+                        <li>Tanqueray Ten- 8€</li>
+                        <li>Tanqueray analcolico - 6€</li>
+                    </ul>
+                </div>
+            </div>
             <div class="back-btn" data-action="back">← Zurück</div>
+
         </div>
 
         <script src="script.js"></script>
