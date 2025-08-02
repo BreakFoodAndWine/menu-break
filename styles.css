@@ -10,7 +10,9 @@ body {
     color: #333;
     padding: 20px;
 }
-
+p {
+  font-size: xx-small;
+}
 /* Logo e titolo */
 
 .hero-header{
@@ -80,6 +82,32 @@ h1 {
   background: #f0f0f0;
 }
 
+.menu-dropdown {
+    display: flex;               /* Trasforma in flex container */
+    flex-direction: column;      /* Disposizione verticale */
+    gap: 10px;                   /* Spazio uniforme tra i bottoni */
+    align-items: center;         /* Centra i bottoni orizzontalmente */
+    margin: 20px 0;              /* Spazio sopra e sotto il menù */
+}
+
+.menu-dropdown button {
+    width: 100%;                 /* I bottoni occupano tutta la larghezza del contenitore */
+    max-width: 200px;            /* Larghezza massima dei bottoni */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem;          /* Dimensione del testo */
+    font-weight: bold;
+    padding: 10px;               /* Spazio interno */
+    border: none;      /* Bordo */
+    background-color: #fff;      /* Sfondo bianco */
+    border-radius: 5px;          /* Angoli arrotondati */
+    cursor: pointer;             /* Cambia il cursore al passaggio del mouse */
+    transition: background 0.2s, color 0.2s; /* Animazione per hover */
+}
+
+.menu-dropdown button:hover {
+    background: #f0f0f0;         /* Sfondo più chiaro al passaggio del mouse */
+}
+
 /* Sezioni del menù */
 .menu-section {
   display: none;
@@ -92,6 +120,23 @@ h1 {
 }
 
 .menu-section.active {
+    display: block;
+}
+
+/* Nascondi tutte le categorie di default */
+.menu-category {
+  display: none;               /* Nascondi di default */
+  margin-top: 10px;            /* Spazio sopra il contenuto */
+  text-align: centre;            /* Allinea il testo a sinistra */
+  width: 100%;                 /* Occupa tutta la larghezza del contenitore */
+  max-width: 600px;            /* Larghezza massima */
+  padding: 10px;               /* Spazio interno */
+  border: none;                /* Rimuovi il bordo */
+  background-color: transparent; /* Rimuovi lo sfondo */
+}
+
+/* Mostra solo la categoria attiva */
+.menu-category.active {
     display: block;
 }
 
@@ -181,6 +226,3 @@ footer img {
   height: auto;          /* mantiene le proporzioni */
   margin: 0 auto;        /* centra orizzontalmente */
 }
-
-
-
