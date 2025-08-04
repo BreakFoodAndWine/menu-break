@@ -222,8 +222,9 @@ h1 {
 .menu-section .tartine-list > li {
   margin: 0.05em 0;
 }
-p {
-  font-size: 0.5em;
+.info {
+  font-size: 0.65rem;
+  line-height: 1.5;
 }
 
 footer img {
