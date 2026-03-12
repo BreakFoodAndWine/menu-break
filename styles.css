@@ -1,4 +1,8 @@
-/* Reset e base */
+@font-face {
+font-family: 'MioFontCorsivo';
+src: url('italic.ttf') format('truetype');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -222,7 +226,26 @@ h1 {
 .menu-section .tartine-list > li {
   margin: 0.05em 0;
 }
+
+/* Stile per il menù del lavoratore */
+.worker-menu {
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+/* Stile per il coperto per farlo risaltare */
+.coperto {
+    margin: 25px 0;
+    font-size: 1.1rem;
+}
+
+/* Aggiornamento per il riquadro info/allergeni */
+.info p {
+    margin-bottom: 8px; /* Crea un piccolo spazio tra la frase degli allergeni e quella dei surgelati */
+}
+
 .info {
+  font-family: 'MioFontCorsivo', sans-serif !important;
   font-size: 0.65rem;
   line-height: 1.5;
 }
@@ -233,4 +256,28 @@ footer img {
   width: 40%;            /* oppure un 40% rispetto al contenitore footer */
   height: auto;          /* mantiene le proporzioni */
   margin: 0 auto;        /* centra orizzontalmente */
+}
+
+/* Stile per la tabella sconti (solo due linee orizzontali) */
+.discount-table {
+    width: 100%;
+    max-width: 300px;          /* Mantiene la tabella compatta */
+    margin: 15px auto;         /* Centra la tabella e aggiunge spazio sopra/sotto */
+    border-collapse: collapse; /* Evita doppi bordi */
+}
+
+.discount-table th {
+    border-bottom: 1.5px solid #333; /* Prima linea: sotto l'intestazione */
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.discount-table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.discount-table tr:last-child td {
+    border-bottom: 1.5px solid #333; /* Seconda linea: a chiudere la tabella */
 }
